@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(215, 219, 238);
+}
+
+.numberButtons {
+    display: flex;
+    width: 260px;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.number {
+    flex-grow: 1;
+    height: 90px;
+    background-color: rgb(181, 199, 188);
+}
+
+.break {
+    flex-basis: 100%;
+}
+
+.calcContainer {
+    display: flex;
+    margin-top: 10px;
+    gap: 0px;
+}
+
+.operatorButtons {
+    display: flex;
+    width: 132px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.operator,
+.equalsButton,
+.clearButton {
+    flex-grow: 1;
+    height: 90px;
+}
+
+.numberZero {
+    flex-grow: 2;
+    width: 27px;
+}
+
+.operator {
+    background-color: rgb(52, 123, 230);
+    width: 20px;
+}
+
+.equalsButton {
+    background-color: rgb(52, 123, 230);
+}
+
+.clearButton {
+    background-color: rgb(52, 123, 230);
+}
+
+.display {
+    height: 100px;
+    width: 391px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    justify-content: flex-end;
+}
+
+.container {
+    background-color: rgb(34, 34, 34);
+    padding: 15px;
+}
+
+
+#displayText {
+    color: black;
+    font-size: 70px;
+    margin-right: 15px;
+}
+
+button {
+    cursor: pointer;
+
+    font-size: 35px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    
+    transform: scale(0.99);
+}
